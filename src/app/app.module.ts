@@ -8,7 +8,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserDetailsGuard } from './userDetailsGuard';
 import { MarkdownPipe } from 'src/utils/markdown.pipe';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path:'', component: UsersListComponent},
   { path:':id', component: UserDetailsComponent, canActivate: [UserDetailsGuard]},
   { path:'**', redirectTo: ''},
