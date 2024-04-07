@@ -1,1 +1,13 @@
-<div>{{id}}</div>
+<div class="profile-container card">
+    <div class="row">
+        <div class="left col-4">
+            <div class="profile-picture">
+                <img [src]="user.profilePicture" class="img-fluid rounded-start">
+            </div>
+        </div>
+        <div class="right col-8">
+            <h2 class="name py-2">{{ user.name }}</h2>
+            <div class="bio-container" [innerHTML]="markdown"></div>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserDetailsGuard } from './userDetailsGuard';
+import { MarkdownPipe } from 'src/utils/markdown.pipe';
 
 const routes: Routes = [
   { path:'', component: UsersListComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MarkdownPipe
   ],
   exports: [RouterModule],
   providers: [],
