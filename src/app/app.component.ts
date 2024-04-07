@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     </nav>
 
     <div class="container py-4 px-3 mx-auto">
-      <app-users-list></app-users-list>
+      <router-outlet></router-outlet>
     </div>
   `
 })
